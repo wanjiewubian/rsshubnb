@@ -43,7 +43,7 @@ importers:
         version: 1.19.6(hono@4.10.7)
       '@hono/zod-openapi':
         specifier: 1.1.5
-        version: 1.1.5(hono@4.10.7)(zod@4.1.13)
+        version: 1.1.5(hono@4.10.7)(zod@4.3.2)
       '@notionhq/client':
         specifier: 5.4.0
         version: 5.4.0
@@ -291,8 +291,8 @@ importers:
         specifier: 16.0.1
         version: 16.0.1
       zod:
-        specifier: 4.1.13
-        version: 4.1.13
+        specifier: 4.3.2
+        version: 4.3.2
     devDependencies:
       '@babel/preset-env':
         specifier: 7.28.5
@@ -6153,6 +6153,7 @@ packages:
   whatwg-encoding@3.1.1:
     resolution: {integrity: sha512-6qN4hJdMwfYBtE3YBTTHhoeuUrDBPZmbQaxWAqSALV/MeEnR5z1xd8UKud2RAkFoPkmB+hli1TZSnyi84xz1vQ==}
     engines: {node: '>=18'}
+    deprecated: Use @exodus/bytes instead for a more spec-conformant and faster implementation
 
   whatwg-mimetype@4.0.0:
     resolution: {integrity: sha512-QaKxh0eNIi2mE9p2vEdzfagOKHCcj1pJ56EEHGQOVxp8r9/iszLUUV7v89x9O1p/T+NlTM5W7jW6+cz4Fq1YVg==}
@@ -6324,8 +6325,8 @@ packages:
   zod@4.1.11:
     resolution: {integrity: sha512-WPsqwxITS2tzx1bzhIKsEs19ABD5vmCVa4xBo2tq/SrV4RNZtfws1EnCWQXM6yh8bD08a1idvkB5MZSBiZsjwg==}
 
-  zod@4.1.13:
-    resolution: {integrity: sha512-AvvthqfqrAhNH9dnfmrfKzX5upOdjUVJYFqNSlkmGf64gRaTzlPwz99IHYnVs28qYAybvAlBV+H7pn0saFY4Ig==}
+  zod@4.3.2:
+    resolution: {integrity: sha512-b8L8yn4rIVfiXyHAmnr52/ZEpDumlT0bmxiq3Ws1ybrinhflGpt12Hvv54kYnEsGPRs6o/Ka3/ppA2OWY21IVg==}
 
 snapshots:
 
@@ -6364,10 +6365,10 @@ snapshots:
 
   '@asamuzakjp/nwsapi@2.3.9': {}
 
-  '@asteasolutions/zod-to-openapi@8.1.0(zod@4.1.13)':
+  '@asteasolutions/zod-to-openapi@8.1.0(zod@4.3.2)':
     dependencies:
       openapi3-ts: 4.5.0
-      zod: 4.1.13
+      zod: 4.3.2
 
   '@babel/code-frame@7.27.1':
     dependencies:
@@ -7406,18 +7407,18 @@ snapshots:
     dependencies:
       hono: 4.10.7
 
-  '@hono/zod-openapi@1.1.5(hono@4.10.7)(zod@4.1.13)':
+  '@hono/zod-openapi@1.1.5(hono@4.10.7)(zod@4.3.2)':
     dependencies:
-      '@asteasolutions/zod-to-openapi': 8.1.0(zod@4.1.13)
-      '@hono/zod-validator': 0.7.5(hono@4.10.7)(zod@4.1.13)
+      '@asteasolutions/zod-to-openapi': 8.1.0(zod@4.3.2)
+      '@hono/zod-validator': 0.7.5(hono@4.10.7)(zod@4.3.2)
       hono: 4.10.7
       openapi3-ts: 4.5.0
-      zod: 4.1.13
+      zod: 4.3.2
 
-  '@hono/zod-validator@0.7.5(hono@4.10.7)(zod@4.1.13)':
+  '@hono/zod-validator@0.7.5(hono@4.10.7)(zod@4.3.2)':
     dependencies:
       hono: 4.10.7
-      zod: 4.1.13
+      zod: 4.3.2
 
   '@humanfs/core@0.19.1': {}
 
@@ -12724,4 +12725,4 @@ snapshots:
 
   zod@4.1.11: {}
 
-  zod@4.1.13: {}
+  zod@4.3.2: {}
